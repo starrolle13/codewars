@@ -10,3 +10,10 @@ function boolToWord( bool ){
     bool === true? string = "Yes": string = "No"
     return string;
   }
+
+  // I did a second one since I was on a roll
+  // I overcomplicated it. I was using .split and .reverse
+ 
+  function reverseList(list) {
+    return list.reverse();
+    }
