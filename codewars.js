@@ -17,3 +17,10 @@ function boolToWord( bool ){
   function reverseList(list) {
     return list.reverse();
     }
+
+ // I solved it right away but I did not capitlaize the Math
+
+ function cockroachSpeed(s) {
+    //Good Luck! 
+    return Math.floor(s * 27.777777777778)
+  }
