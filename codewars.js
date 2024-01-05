@@ -24,3 +24,23 @@ function boolToWord( bool ){
     //Good Luck! 
     return Math.floor(s * 27.777777777778)
   }
+
+  //12/5 I keep forgetting that strings in Javascript are immutable meaning 
+  //that I can't replace them in a sequence, I can only make a new array
+  //to store the replacement and join that into a string
+  function fakeBin(x) {
+    const resultArray = [];
+    
+    for (let i = 0; i < x.length; i++) {
+      if (parseInt(x.charAt(i)) < 5) {
+        resultArray.push("0");
+        console.log("0");
+      } else {
+        resultArray.push("1");
+        console.log("1");
+      }
+    }
+  
+    const resultString = resultArray.join('');
+    return resultString;
+  }
