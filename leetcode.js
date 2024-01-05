@@ -12,3 +12,21 @@ const mergeAlternately1 = (word1, word2) => {
        }
        return mergedArray.join('');
      };
+
+     /*Todays leetcode was so challenging that I didnt try it first
+       It was supposed to be an easy one and it became harder and gave me
+       a small amount of imposter sydrome. I was able to find the answer
+       now I am looking at the details to understand more.*/
+
+       function gcdOfStrings(str1, str2) {
+        if (str1 + str2 !== str2 + str1) {
+          return "";
+        }
+      
+        const gcd = (a, b) => (b === 0 ? a : gcd(b, a % b));
+      
+        const length = gcd(str1.length, str2.length);
+      
+        return str1.substring(0, length);
+      }
+  
