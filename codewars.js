@@ -44,3 +44,10 @@ function boolToWord( bool ){
     const resultString = resultArray.join('');
     return resultString;
   }
+
+  //12/6 I did a simple one and figured out how to check if a variable 
+  //is a string. It was not tough to figure out. 
+  function problem(x){
+    //your code here
+  return String(x) === x ? "Error": x * 50 + 6;
+  }
