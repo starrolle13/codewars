@@ -58,3 +58,12 @@ function boolToWord( bool ){
   function sayHello(name) {
     return `Hello, ${name}`
   }
+
+  //1/7 created a function that returned hotdogs. It was an easy task
+  //learned about triple ternary statements. Time complexity 0(1) because 
+  // it does not increase the value of n as the equation gets better
+  function saleHotdogs(n){
+    let price = 0  
+    n < 5 ? price = 100 : n >= 5&& n < 10 ? price = 95 : price = 90
+    return n * price  
+    }
