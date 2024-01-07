@@ -51,3 +51,10 @@ function boolToWord( bool ){
     //your code here
   return String(x) === x ? "Error": x * 50 + 6;
   }
+
+
+  //This one was pretty easy. I had to correct the return statement so that
+  //the cancatenation is correct and passes the name in
+  function sayHello(name) {
+    return `Hello, ${name}`
+  }
