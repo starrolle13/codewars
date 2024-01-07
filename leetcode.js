@@ -16,7 +16,8 @@ const mergeAlternately1 = (word1, word2) => {
      /*Todays leetcode was so challenging that I didnt try it first
        It was supposed to be an easy one and it became harder and gave me
        a small amount of imposter sydrome. I was able to find the answer
-       now I am looking at the details to understand more.*/
+       now I am looking at the details to understand more. I learned that is
+       implementing the Euclidean algorithm and now I want to read about that*/
 
        function gcdOfStrings(str1, str2) {
         if (str1 + str2 !== str2 + str1) {
