@@ -67,3 +67,8 @@ function boolToWord( bool ){
     n < 5 ? price = 100 : n >= 5&& n < 10 ? price = 95 : price = 90
     return n * price  
     }
+
+    //1/8 changed a string tpo uppercase
+    function makeUpperCase(str) {
+        return str.toUpperCase();
+        }
