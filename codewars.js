@@ -72,3 +72,13 @@ function boolToWord( bool ){
     function makeUpperCase(str) {
         return str.toUpperCase();
         }
+
+   //1/8 I was missing the parInt x[i] to make sure I am accessing the element 
+   //inside of the array. I had a tough day and bombed a skills test
+   function sumMix(x){
+    let sum = 0
+    for (let i = 0; i < x.length; i++){
+       sum += parseInt(x[i]);
+    }
+    return sum
+  }    
