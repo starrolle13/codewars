@@ -87,3 +87,16 @@ function boolToWord( bool ){
   function solution(str){
     return str.split("").reverse().join("");
   }
+
+  //1/9 return open or senior on a nested array
+  function openOrSenior(data) {
+    let newData = []
+    data.forEach((item) => {
+      if (item[0] > 54 && item[1] > 7) {
+        newData.push("Senior");
+      } else {
+        newData.push("Open");
+      }
+    });
+     return newData;
+  }
