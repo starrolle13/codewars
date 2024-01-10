@@ -81,4 +81,9 @@ function boolToWord( bool ){
        sum += parseInt(x[i]);
     }
     return sum
-  }    
+  }  
+  
+  //1/9 reversed a string
+  function solution(str){
+    return str.split("").reverse().join("");
+  }
