@@ -111,3 +111,13 @@ function boolToWord( bool ){
     })
     return busPassengers
   }
+
+  //1/10 even or odd was easy forgot to use % instead of / 
+  function oddOrEven(array) {
+    let evenOdd = 0
+   array.forEach((number)=>{
+     evenOdd += number
+      
+   })
+    return evenOdd % 2 === 0 ? "even" : "odd";
+  }
