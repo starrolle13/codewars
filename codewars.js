@@ -100,3 +100,14 @@ function boolToWord( bool ){
     });
      return newData;
   }
+
+  //1/10 I got the fact that the bus stop passengers is getting the stops added 
+  //and subtracted from it
+  var number = function(busStops){
+    // Good Luck!
+    let busPassengers = 0
+   busStops.forEach((stop)=>{
+      busPassengers += stop[0] - stop[1];
+    })
+    return busPassengers
+  }
