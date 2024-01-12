@@ -123,5 +123,10 @@ function boolToWord( bool ){
   }
   //1/11 I answered this first try but may revise it
   var isSquare = function(n){
-    return Math.sqrt(n)*Math.sqrt(n)===n? true: false
+    return Math.sqrt(n)*Math.sqrt(n)===n
    }
+
+   //Got second one on first try too
+   function booleanToString(b){
+    return b ? "true" : "false"
+  }
