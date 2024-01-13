@@ -130,3 +130,8 @@ function boolToWord( bool ){
    function booleanToString(b){
     return b ? "true" : "false"
   }
+
+  //1/12 today i am doing easy ones. My mind hurts and I have not been able to focus
+  function repeatStr (n, s) {
+    return s.repeat(n);
+  }
