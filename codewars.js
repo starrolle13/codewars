@@ -135,3 +135,7 @@ function boolToWord( bool ){
   function repeatStr (n, s) {
     return s.repeat(n);
   }
+  //I got the answer as clean as possible but there was a typo because my brain hurts
+  function lovefunc(flower1, flower2) {
+    return (flower1 % 2 === 0 && flower2 % 2 !== 0) || (flower1 % 2 !== 0 && flower2 % 2 === 0);
+}
