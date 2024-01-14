@@ -145,3 +145,8 @@ function noSpace(x){
     return x.replace(/ /g, "");
     }
 
+//learned about Regex a little more and the differences between it and gsub whic I used in Ruby
+function validatePIN(pin) {
+    // Check if the pin consists of exactly 4 or 6 digits
+    return /^(\d{4}|\d{6})$/.test(pin);
+}    
