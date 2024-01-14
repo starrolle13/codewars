@@ -139,3 +139,9 @@ function boolToWord( bool ){
   function lovefunc(flower1, flower2) {
     return (flower1 % 2 === 0 && flower2 % 2 !== 0) || (flower1 % 2 !== 0 && flower2 % 2 === 0);
 }
+
+//1/13 removed speaces from a string with a gsub
+function noSpace(x){
+    return x.replace(/ /g, "");
+    }
+
