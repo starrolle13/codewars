@@ -149,4 +149,10 @@ function noSpace(x){
 function validatePIN(pin) {
     // Check if the pin consists of exactly 4 or 6 digits
     return /^(\d{4}|\d{6})$/.test(pin);
-}    
+}  
+
+//reversed a string that had mixed letters to check for palindrome
+function isPalindrome(x) {
+    // your code here
+    return x.toLowerCase() === x.toLowerCase().split('').reverse().join('')
+  }
