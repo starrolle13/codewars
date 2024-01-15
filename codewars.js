@@ -151,8 +151,20 @@ function validatePIN(pin) {
     return /^(\d{4}|\d{6})$/.test(pin);
 }  
 
-//reversed a string that had mixed letters to check for palindrome
+//1/14 reversed a string that had mixed letters to check for palindrome
 function isPalindrome(x) {
     // your code here
     return x.toLowerCase() === x.toLowerCase().split('').reverse().join('')
   }
+
+  //this one was interesting because I used XOR to find the number that was different and saved it 
+  //to a variable and returned it
+  function stray(numbers) {
+    let strayNumber = 0;
+
+  numbers.forEach((number) => {
+        strayNumber ^= number;
+    });
+
+    return strayNumber;
+}
