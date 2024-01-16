@@ -168,3 +168,9 @@ function isPalindrome(x) {
 
     return strayNumber;
 }
+
+//1/15 solved in 2 minutes
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+    // TODO
+    return fuelLeft * mpg >= distanceToPump
+  };
