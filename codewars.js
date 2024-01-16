@@ -174,3 +174,18 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
     // TODO
     return fuelLeft * mpg >= distanceToPump
   };
+
+  //this one was more difficult and I wasnt doing proper string manipulation
+  function isIsogram(str) {
+    let letterSet = new Set();
+  
+    for (let letter of str) {
+      if (letterSet.has(letter)) {
+        return false; // Found a repeated letter
+      }
+      letterSet.add(letter);
+    }
+  
+    return true; // No repeated letters found
+  }
+  
