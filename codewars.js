@@ -179,7 +179,7 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
   function isIsogram(str) {
     let letterSet = new Set();
   
-    for (let letter of str) {
+    for (let letter of str.toLowerCase()) {
       if (letterSet.has(letter)) {
         return false; // Found a repeated letter
       }
