@@ -188,4 +188,10 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
   
     return true; // No repeated letters found
   }
+
+  //1/16 they just wanted me to create a function today
+  function helloWorld(){
+    let str = "Hello World!"
+    console.log(str)
+  }
   
