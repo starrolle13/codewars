@@ -199,4 +199,7 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
   function stringToArray(string){
     return string.split(" ")
     }
-  
+  //this passed but did nto handle all edge cases ie NaN
+  function sumStr(a,b) {
+    return String(parseInt(a) + parseInt(b)) 
+   }
