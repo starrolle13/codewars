@@ -194,4 +194,9 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
     let str = "Hello World!"
     console.log(str)
   }
+
+  //1/17 split a string and returned an array
+  function stringToArray(string){
+    return string.split(" ")
+    }
   
