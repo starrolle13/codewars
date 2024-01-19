@@ -200,6 +200,10 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
     return string.split(" ")
     }
   //this passed but did nto handle all edge cases ie NaN
-  function sumStr(a,b) {
-    return String(parseInt(a) + parseInt(b)) 
-   }
+  function sumStr(a, b) {
+    const numA = isNaN(parseInt(a)) ? 0 : parseInt(a);
+    const numB = isNaN(parseInt(b)) ? 0 : parseInt(b);
+  
+    return String(numA + numB);
+  }
+  
