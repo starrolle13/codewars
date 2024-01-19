@@ -206,4 +206,14 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
   
     return String(numA + numB);
   }
+
+  //1/18 I want to start challenging myself more
+  function squareDigits(num) {
+    const numArray = num.toString().split('').map(digit => parseInt(digit));
+    
+    const squaredDigits = numArray.map(digit => digit ** 2);
+  
+    return parseInt(squaredDigits.join(''));
+  }
+  
   
