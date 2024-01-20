@@ -216,4 +216,14 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
     return parseInt(squaredDigits.join(''));
   }
   
+  //1/19 created an array that counts the elements of an array
+  var number = function (array) {
+    // your awesome code here
+    let newArray = [];
   
+    array.forEach((letter, index) => {
+      newArray.push(`${index + 1}: ${letter}`);
+    });
+  
+    return newArray;
+  };
