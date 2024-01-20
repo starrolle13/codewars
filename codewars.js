@@ -227,3 +227,8 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
   
     return newArray;
   };
+
+  //This one was easy
+  function simpleMultiplication(number) {
+    return number % 2 === 0? number * 8 : number * 9 
+    }
