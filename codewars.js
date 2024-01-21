@@ -237,3 +237,14 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
     function solution(nums) {
       return nums === null || nums.length === 0 ? [] : nums.sort((a, b) => a - b);
     }
+
+    //this one bothered me because I wanted to come up with somethign cleaner
+    function sum(numbers) {
+      let result = 0;
+    
+      numbers.forEach((number) => {
+        result += number;
+      });
+    
+      return result;
+    }
