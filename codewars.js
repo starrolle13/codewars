@@ -232,3 +232,8 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
   function simpleMultiplication(number) {
     return number % 2 === 0? number * 8 : number * 9 
     }
+
+    //1/20 sorted array values in ascending order
+    function solution(nums) {
+      return nums === null || nums.length === 0 ? [] : nums.sort((a, b) => a - b);
+    }
