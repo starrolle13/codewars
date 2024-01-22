@@ -253,3 +253,8 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
     function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
       return laLigaGoals+copaDelReyGoals+championsLeagueGoals
      }
+
+     function findNeedle(haystack) {
+      const index = haystack.indexOf("needle");
+      return index !== -1?`found the needle at position ${index}`:"needle not found in the haystack"
+      }
