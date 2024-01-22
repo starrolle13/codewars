@@ -248,3 +248,8 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
     
       return result;
     }
+
+    //1/21 added goal results together
+    function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+      return laLigaGoals+copaDelReyGoals+championsLeagueGoals
+     }
