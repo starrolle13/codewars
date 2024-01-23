@@ -274,3 +274,9 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
       
         return odd;
       }
+
+      //used regex to replace all characters with a capital
+      String.prototype.toJadenCase = function () {
+        // Use replace to capitalize the first letter of each word
+        return this.replace(/(^\w|\s\w)/g, m => m.toUpperCase());
+      };
