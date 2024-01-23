@@ -258,3 +258,19 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
       const index = haystack.indexOf("needle");
       return index !== -1?`found the needle at position ${index}`:"needle not found in the haystack"
       }
+
+      //1/22 this one was annoying
+      function findOdd(A) {
+        let odd = 0;
+        let matches = A.filter(number => {
+          // Use the filter function to find elements that match the current number
+          let matchingElements = A.filter(elem => elem === number);
+          
+          // Check if the count of matching elements is odd
+          if (matchingElements.length % 2 !== 0) {
+            odd = number;
+          }
+        });
+      
+        return odd;
+      }
