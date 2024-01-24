@@ -281,7 +281,15 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
         return this.replace(/(^\w|\s\w)/g, m => m.toUpperCase());
       };
 
-//1/23
+//1/23 found the last triangle angle
 function otherAngle(a, b) {
   return 180 - (a + b)
  }
+
+ //is this a Pangram
+
+ function isPangram(string){
+  alphabets = 'abcdefghijklmnopqrstuvwxyz'.split("");
+     string = string.toLowerCase();
+      return alphabets.every(x => string.includes(x));
+  }
