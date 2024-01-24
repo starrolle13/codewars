@@ -280,3 +280,8 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
         // Use replace to capitalize the first letter of each word
         return this.replace(/(^\w|\s\w)/g, m => m.toUpperCase());
       };
+
+//1/23
+function otherAngle(a, b) {
+  return 180 - (a + b)
+ }
