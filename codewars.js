@@ -293,3 +293,25 @@ function otherAngle(a, b) {
      string = string.toLowerCase();
       return alphabets.every(x => string.includes(x));
   }
+
+  //1/24 sorted a number and string arrray
+  function order(words) {
+    if (words.trim() === "") {
+      return ""; // Return an empty string if the input is empty
+    }
+  
+    // Split the input string into an array of words
+    const wordArray = words.split(" ");
+  
+    // Sort the array based on the embedded number in each word
+    const sortedArray = wordArray.sort((a, b) => {
+      const numA = parseInt(a.match(/\d+/)[0]);
+      const numB = parseInt(b.match(/\d+/)[0]);
+      return numA - numB;
+    });
+  
+    // Join the sorted array back into a string
+    const resultString = sortedArray.join(" ");
+  
+    return resultString;
+  }
