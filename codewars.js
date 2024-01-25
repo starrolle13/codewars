@@ -315,3 +315,15 @@ function otherAngle(a, b) {
   
     return resultString;
   }
+
+  //average of array elements
+  function findAverage(array) {
+    if (array.length === 0 || array.every(num => num === 0)) {
+        return 0;
+    }
+    let sum = 0
+    array.forEach((num)=>{
+     sum+=num
+    })
+    return sum/array.length
+    }
