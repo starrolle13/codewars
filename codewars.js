@@ -327,3 +327,21 @@ function otherAngle(a, b) {
     })
     return sum/array.length
     }
+
+    //1/25 count the valid smiley faces
+    function countSmileys(arr) {
+      let count = 0;
+         const validEyes = [':', ';'];
+         const validNoses = ['-', '~'];
+         const validMouths = [')', 'D'];
+     
+         for (const face of arr) {
+             if (face.length === 2 && validEyes.includes(face[0]) && validMouths.includes(face[1])) {
+                 count++;
+             } else if (face.length === 3 && validEyes.includes(face[0]) && validNoses.includes(face[1]) && validMouths.includes(face[2])) {
+                 count++;
+             }
+         }
+     
+         return count;
+     }
