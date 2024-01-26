@@ -345,3 +345,9 @@ function otherAngle(a, b) {
      
          return count;
      }
+
+     // find vowels with regex
+     function getCount(str) {
+      let m = str.match(/[aeiou]/gi);
+        return m === null ? 0 : m.length;
+      }
