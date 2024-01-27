@@ -360,3 +360,24 @@ function getGrade (s1, s2, s3) {
   :score >= 60 && score <= 70?	'D'
   :'F'
 }
+// rock paper scissors one way
+const rps = (p1, p2) => {
+  return p1 === p2? "Draw!"
+  : p1 === 'rock' && p2 === 'scissors'? "Player 1 won!"
+  : p1 === 'paper'&& p2 === 'rock'? "Player 1 won!" 
+  : p1 === 'scissors' && p2 === 'paper'? "Player 1 won!"
+  : "Player 2 won!"
+};
+//a second way
+const rps2 = (p1, p2) => {
+  return p1 === p2? "Draw!"
+  : p1 === 'rock' && p2 === 'scissors'
+  || p1 === 'paper'&& p2 === 'rock'
+  || p1 === 'scissors' && p2 === 'paper'? 
+    "Player 1 won!"
+  : "Player 2 won!"
+};
+
+// here is a regex one that I loved learning
+const rps3 = (p1, p2) =>
+  p1 === p2 ? `Draw!` : `Player ${/ps|rp|sr/.test(p1[0] + p2[0]) + 1} won!`;
