@@ -351,3 +351,12 @@ function otherAngle(a, b) {
       let m = str.match(/[aeiou]/gi);
         return m === null ? 0 : m.length;
       }
+//1/26 grade function
+function getGrade (s1, s2, s3) {
+  let score = (s1+s2+s3)/3
+  return score >= 90 && score <= 100?	'A'
+  :score >= 80 && score <= 90?	'B'
+  :score >= 70 && score <= 80?	'C'
+  :score >= 60 && score <= 70?	'D'
+  :'F'
+}
