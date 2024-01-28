@@ -384,13 +384,5 @@ const rps3 = (p1, p2) =>
 
 //1/27 Im exhausted
 function positiveSum(arr) {
-  let count = 0;
-  let currentSum = 0;
-
-  arr.forEach((num) => {
-    num > 0 ? (currentSum += num) : (currentSum = 0);
-    count = Math.max(count, currentSum);
-  });
-
-  return count;
+  return arr.reduce((sum, num) => (num > 0 ? sum + num : sum), 0);
 }
