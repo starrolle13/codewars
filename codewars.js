@@ -381,3 +381,16 @@ const rps2 = (p1, p2) => {
 // here is a regex one that I loved learning
 const rps3 = (p1, p2) =>
   p1 === p2 ? `Draw!` : `Player ${/ps|rp|sr/.test(p1[0] + p2[0]) + 1} won!`;
+
+//1/27 Im exhausted
+function positiveSum(arr) {
+  let count = 0;
+  let currentSum = 0;
+
+  arr.forEach((num) => {
+    num > 0 ? (currentSum += num) : (currentSum = 0);
+    count = Math.max(count, currentSum);
+  });
+
+  return count;
+}
