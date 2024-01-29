@@ -386,3 +386,11 @@ const rps3 = (p1, p2) =>
 function positiveSum(arr) {
   return arr.reduce((sum, num) => (num > 0 ? sum + num : sum), 0);
 }
+
+//1/28 found out bmi
+function bmi(weight, height) {
+  return weight/(height*height) <= 18.5? "Underweight"
+  : weight/(height*height) <= 25.0? "Normal"
+  : weight/(height*height) <= 30.0? "Overweight"
+  : "Obese"
+}
