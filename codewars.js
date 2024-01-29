@@ -394,3 +394,16 @@ function bmi(weight, height) {
   : weight/(height*height) <= 30.0? "Overweight"
   : "Obese"
 }
+
+//can also remove the repeated cocde
+function bmi(weight, height) {
+  const bodyMassIndex = weight / (height * height);
+
+  return bodyMassIndex <= 18.5
+    ? "Underweight"
+    : bodyMassIndex <= 25.0
+    ? "Normal"
+    : bodyMassIndex <= 30.0
+    ? "Overweight"
+    : "Obese";
+}
