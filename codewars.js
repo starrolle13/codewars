@@ -407,3 +407,8 @@ function bmi(weight, height) {
     ? "Overweight"
     : "Obese";
 }
+
+//1/29
+function setAlarm(employed, vacation){
+  return employed === true&&vacation === false? true:false
+  }
