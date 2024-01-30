@@ -412,3 +412,8 @@ function bmi(weight, height) {
 function setAlarm(employed, vacation){
   return employed === true&&vacation === false? true:false
   }
+
+  //I could have made it even simpler
+  function setAlarm(employed, vacation){
+    return employed && !vacation;
+  }
