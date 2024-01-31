@@ -417,3 +417,8 @@ function setAlarm(employed, vacation){
   function setAlarm(employed, vacation){
     return employed && !vacation;
   }
+
+  //1/30 created an addition problem with a string using eval
+  function basicOp(operation, value1, value2){
+    return eval(value1+operation+value2)
+    }
