@@ -422,3 +422,12 @@ function setAlarm(employed, vacation){
   function basicOp(operation, value1, value2){
     return eval(value1+operation+value2)
     }
+
+  //  I was originally thinking of something like this but found something 
+  //much easier before commiting
+  function basicOp(operation, value1, value2) {
+    return  operation == '+' ? value1 + value2 :
+            operation == '-' ? value1 - value2 :
+            operation == '*' ? value1 * value2 :
+            operation == '/' ? value1 / value2 : 'Wrong Operation';
+  }
