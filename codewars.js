@@ -439,3 +439,10 @@ function setAlarm(employed, vacation){
       return length * width * height
     }
   }
+
+  //this is outdated so I removed some things but not all
+  class Kata {
+    static getVolumeOfCuboid(l, w, h) {
+      return l * w * h
+    }
+  }
