@@ -446,3 +446,8 @@ function setAlarm(employed, vacation){
       return l * w * h
     }
   }
+
+ //2/1 return count
+ function hoopCount (n) {
+  return n>=10? "Great, now move on to tricks": "Keep at it until you get it"
+   } 
