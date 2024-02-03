@@ -463,3 +463,8 @@ function setAlarm(employed, vacation){
     : number < 0? -number
     : number
     }   
+
+   //super simplified
+   function opposite(number) {
+    return number > 0? -number :-number
+    } 
