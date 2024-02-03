@@ -456,3 +456,10 @@ function setAlarm(employed, vacation){
   function hoopCount (n) {
     return n<10? "Keep at it until you get it":"Great, now move on to tricks"
      }
+
+  //messy first version
+  function opposite(number) {
+    return number > 0? number - number - number
+    : number < 0? -number
+    : number
+    }   
