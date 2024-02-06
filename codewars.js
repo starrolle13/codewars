@@ -468,3 +468,8 @@ function setAlarm(employed, vacation){
    function opposite(number) {
     return number > 0? -number :-number
     } 
+
+    //2/5 I cant believe I accidentally skipped a day
+    function greet (name, owner) {
+      return name===owner? "Hello boss": "Hello guest"
+      }
