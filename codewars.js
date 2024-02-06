@@ -473,3 +473,8 @@ function setAlarm(employed, vacation){
     function greet (name, owner) {
       return name===owner? "Hello boss": "Hello guest"
       }
+
+      //simplified
+      function greet (name, owner) {
+        return `Hello ${name==owner?'boss':'guest'}`
+      }
